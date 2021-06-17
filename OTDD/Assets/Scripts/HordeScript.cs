@@ -21,7 +21,7 @@ public class HordeScript : MonoBehaviour
     void Update()
     {
         if(HordeDir != Player.currentDir) {
-            //MoveHorde();
+            MoveHorde();
             //Debug.Log("Horde is moving!");
         }
         
