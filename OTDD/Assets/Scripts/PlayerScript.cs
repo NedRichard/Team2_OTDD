@@ -90,22 +90,22 @@ public class PlayerScript : MonoBehaviour
     void Turn() {
 
         if (Input.GetKey(KeyCode.UpArrow)) {
-            currentDir = 1;
+            currentDir = turnDir1;
             Debug.Log("Pushing up!");
             transform.localRotation = Quaternion.Euler(0, doorPos, 0);
 
         } else if (Input.GetKey(KeyCode.DownArrow)) {
-            currentDir = 3;
+            currentDir = turnDir3;
             Debug.Log("Pushing down!");
             transform.localRotation = Quaternion.Euler(0, down, 0);
 
         } else if (Input.GetKey(KeyCode.LeftArrow)) {
-            currentDir = 2;
+            currentDir = turnDir2;
             Debug.Log("Pushing left!");
             transform.localRotation = Quaternion.Euler(0, downLeft, 0);
 
         } else if (Input.GetKey(KeyCode.RightArrow)) {
-            currentDir = 4;
+            currentDir = turnDir4;
             Debug.Log("Pushing right!");
             transform.localRotation = Quaternion.Euler(0, downRight, 0);
         }

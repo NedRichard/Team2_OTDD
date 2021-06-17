@@ -23,6 +23,8 @@ public class HordeScript : MonoBehaviour
         if(HordeDir != Player.currentDir) {
             MoveHorde();
             //Debug.Log("Horde is moving!");
+        } else if(HordeDir == Player.currentDir) {
+            MoveBack();
         }
         
     }
@@ -31,7 +33,14 @@ public class HordeScript : MonoBehaviour
 
         Vector3 newPos = transform.position;
 
-        newPos += new Vector3(0, 0, 1) * hordeSpeed * Time.deltaTime;
+        newPos += new Vector3(1, 0, 0) * hordeSpeed * Time.deltaTime;
+        transform.position = newPos;
+    }
+
+    void MoveBack() {
+        Vector3 newPos = transform.position;
+
+        newPos += new Vector3(-1, 0, 0) * hordeSpeed * Time.deltaTime;
         transform.position = newPos;
     }
 }
