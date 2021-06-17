@@ -22,7 +22,7 @@ public class DoorScript : MonoBehaviour
         CurrentProgress = Player.DoorProgress;
         ProgressBar.fillAmount = CurrentProgress / MaxProgress;
 
-        if(CurrentProgress == MaxProgress) {
+        if(CurrentProgress >= MaxProgress) {
             SceneSwitcher.ChangeToVictoryScene();
         }
       

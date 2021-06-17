@@ -6,12 +6,14 @@ using UnityEngine.UI;
 public class PlayerScript : MonoBehaviour
 {
 
+    public AudioSource doorSound;
+
     public float turnSpeed = 1f;
 
     public float DoorProgress = 0f;
 
     //Position direction labels
-    public int currentDir = 3;
+    public int currentDir = 1;
     public int turnDir1 = 1;
     public int turnDir2 = 2;
     public int turnDir3 = 3;
@@ -27,11 +29,10 @@ public class PlayerScript : MonoBehaviour
     //Boolean for rotation
     bool rotatePlayer = false;
 
-
     // Start is called before the first frame update
     void Start()
     {
-        
+        currentDir = turnDir1;
     }
 
     // Update is called once per frame
@@ -44,6 +45,39 @@ public class PlayerScript : MonoBehaviour
         }
 
         //ChangeDir();
+    }
+
+    void OpenDoor() {
+        
+        DoorProgress++;
+        doorSound.Play();
+        Debug.Log("Increased door progress by 1!");
+    }
+
+    //Currently not used
+    void Turn() {
+
+        if (Input.GetKey(KeyCode.UpArrow)) {
+            currentDir = turnDir1;
+            Debug.Log("Pushing up!");
+            transform.localRotation = Quaternion.Euler(0, doorPos, 0);
+
+        } else if (Input.GetKey(KeyCode.DownArrow)) {
+            currentDir = turnDir3;
+            Debug.Log("Pushing down!");
+            transform.localRotation = Quaternion.Euler(0, down, 0);
+
+        } else if (Input.GetKey(KeyCode.LeftArrow)) {
+            currentDir = turnDir2;
+            Debug.Log("Pushing left!");
+            transform.localRotation = Quaternion.Euler(0, downLeft, 0);
+
+        } else if (Input.GetKey(KeyCode.RightArrow)) {
+            currentDir = turnDir4;
+            Debug.Log("Pushing right!");
+            transform.localRotation = Quaternion.Euler(0, downRight, 0);
+        }
+
     }
 
     void ChangeDir() {
@@ -80,35 +114,4 @@ public class PlayerScript : MonoBehaviour
 
     }
 
-    void OpenDoor() {
-        
-        DoorProgress++;
-        Debug.Log("Increased door progress by 1!");
-    }
-
-    //Currently not used
-    void Turn() {
-
-        if (Input.GetKey(KeyCode.UpArrow)) {
-            currentDir = turnDir1;
-            Debug.Log("Pushing up!");
-            transform.localRotation = Quaternion.Euler(0, doorPos, 0);
-
-        } else if (Input.GetKey(KeyCode.DownArrow)) {
-            currentDir = turnDir3;
-            Debug.Log("Pushing down!");
-            transform.localRotation = Quaternion.Euler(0, down, 0);
-
-        } else if (Input.GetKey(KeyCode.LeftArrow)) {
-            currentDir = turnDir2;
-            Debug.Log("Pushing left!");
-            transform.localRotation = Quaternion.Euler(0, downLeft, 0);
-
-        } else if (Input.GetKey(KeyCode.RightArrow)) {
-            currentDir = turnDir4;
-            Debug.Log("Pushing right!");
-            transform.localRotation = Quaternion.Euler(0, downRight, 0);
-        }
-
-    }
 }

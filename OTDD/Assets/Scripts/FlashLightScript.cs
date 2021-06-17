@@ -9,6 +9,7 @@ public class FlashLightScript : MonoBehaviour
 
     public float FlashBattery = 100f;
 
+    //Position for opening the door
     int switchOff = 1;
 
     public GameObject lightSource;
@@ -25,21 +26,18 @@ public class FlashLightScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        ActivateLight();
+    }
+
+    void ActivateLight() {
 
         if(switchOff != Player.currentDir) {
             isOn = true;
-
-            if (isOn) {
-
-            lightSource.SetActive(true);
-            //clickSound.Play();
-            //FlashBattery--;
-            //Debug.Log("Battery left: " + FlashBattery);
-        }
-
+            lightSource.SetActive(isOn);
         } else {
+            clickSound.Play();
             isOn = false;
-            lightSource.SetActive(false);
+            lightSource.SetActive(isOn);
         }
 
     }
