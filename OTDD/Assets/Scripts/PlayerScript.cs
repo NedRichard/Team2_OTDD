@@ -49,7 +49,7 @@ public class PlayerScript : MonoBehaviour
         //Debug.Log("Increased door progress by 1!");
     }
 
-    //Currently not used
+    
     void Turn() {
 
         if (Input.GetKey(KeyCode.UpArrow)) {
@@ -75,6 +75,7 @@ public class PlayerScript : MonoBehaviour
 
     }
 
+    //Currently not used
     void ChangeDir() {
 
         float rotPlayer = Time.fixedDeltaTime * turnSpeed;

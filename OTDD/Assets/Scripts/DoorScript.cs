@@ -8,7 +8,7 @@ public class DoorScript : MonoBehaviour
 
     private Image ProgressBar;
     public float CurrentProgress;
-    private float MaxProgress = 100f;
+    [SerializeField] float MaxProgress = 100f;
     PlayerScript Player;
 
     private void Start() {

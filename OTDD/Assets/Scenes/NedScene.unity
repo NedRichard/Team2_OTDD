@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.543
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.326322, g: 0.36325237, b: 0.42547986, a: 0.543}
+  m_IndirectSpecularColor: {r: 0.32632187, g: 0.36325207, b: 0.42547944, a: 0.543}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1276,6 +1276,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentProgress: 0
+  MaxProgress: 150
 --- !u!1 &998781230
 GameObject:
   m_ObjectHideFlags: 0
@@ -2668,7 +2669,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 2ff6cab0b21af41478f527e27222611a, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.008
+  m_Volume: 0.038
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -3553,7 +3554,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1814756568, guid: f8fab67e2816ed3488147c7f34eca5a0, type: 3}
       propertyPath: hordeSpeed
-      value: 1
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2621536045507302356, guid: f8fab67e2816ed3488147c7f34eca5a0, type: 3}
       propertyPath: m_Name
@@ -3675,7 +3676,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 702404377, guid: 8f1c58e517e646b48bdc318c57dac0ad, type: 3}
       propertyPath: hordeSpeed
-      value: 1
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7173572706162548722, guid: 8f1c58e517e646b48bdc318c57dac0ad, type: 3}
       propertyPath: m_Name
@@ -3736,7 +3737,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1295410881, guid: b376e081372a4d449adeb36a01890ee2, type: 3}
       propertyPath: hordeSpeed
-      value: 1
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5798765290304152529, guid: b376e081372a4d449adeb36a01890ee2, type: 3}
       propertyPath: m_Name
