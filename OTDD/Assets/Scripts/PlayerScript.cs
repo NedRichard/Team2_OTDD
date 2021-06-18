@@ -6,8 +6,6 @@ using UnityEngine.UI;
 public class PlayerScript : MonoBehaviour
 {
 
-    public AudioSource doorSound;
-
     public float turnSpeed = 1f;
 
     public float DoorProgress = 0f;
@@ -18,7 +16,6 @@ public class PlayerScript : MonoBehaviour
     public int turnDir2 = 2;
     public int turnDir3 = 3;
     public int turnDir4 = 4;
-
 
     //Position angles
     float doorPos = 180f;
@@ -47,11 +44,9 @@ public class PlayerScript : MonoBehaviour
         //ChangeDir();
     }
 
-    void OpenDoor() {
-        
-        DoorProgress++;
-        doorSound.Play();
-        Debug.Log("Increased door progress by 1!");
+    void OpenDoor() {      
+        DoorProgress++;      
+        //Debug.Log("Increased door progress by 1!");
     }
 
     //Currently not used
