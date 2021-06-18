@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.543
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.32632187, g: 0.36325207, b: 0.42547944, a: 0.543}
+  m_IndirectSpecularColor: {r: 0.326322, g: 0.36325237, b: 0.42547986, a: 0.543}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -156,7 +156,7 @@ Transform:
   m_GameObject: {fileID: 184546746}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.002895, y: 0.411566, z: -1.1891762}
-  m_LocalScale: {x: 2.9, y: 1.71, z: 3.41}
+  m_LocalScale: {x: 2.52, y: 1.71, z: 3.41}
   m_Children: []
   m_Father: {fileID: 1369794656}
   m_RootOrder: 2
@@ -823,7 +823,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e011f71eefd1334fb2981429566f24d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doorSound: {fileID: 318616404}
   turnSpeed: 1
   DoorProgress: 0
   currentDir: 3
@@ -2465,7 +2464,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 2ff6cab0b21af41478f527e27222611a, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.095
+  m_Volume: 0.008
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -2985,7 +2984,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1907185116}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0, y: 0.350997, z: -1.055}
+  m_LocalPosition: {x: -0.031, y: 0.350997, z: -1.12}
   m_LocalScale: {x: 1.8581836, y: 1.6259108, z: 0.00725853}
   m_Children: []
   m_Father: {fileID: 1369794656}
@@ -3081,7 +3080,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.100076914, g: 0.08877713, b: 0.14150941, a: 1}
+  m_BackGroundColor: {r: 0.13441533, g: 0.11836951, b: 0.18867922, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -3095,7 +3094,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.3
-  far clip plane: 350
+  far clip plane: 306.96
   field of view: 60
   orthographic: 1
   orthographic size: 80
