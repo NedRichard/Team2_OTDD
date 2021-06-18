@@ -9,6 +9,8 @@ public class HordeScript : MonoBehaviour
 
     public int HordeDir = 3;
 
+    public float hordeReverse = 2f;
+
     PlayerScript Player;
 
     // Start is called before the first frame update
@@ -40,7 +42,7 @@ public class HordeScript : MonoBehaviour
     void MoveBack() {
         Vector3 newPos = transform.position;
 
-        newPos += new Vector3(-1, 0, 0) * hordeSpeed * Time.deltaTime;
+        newPos += new Vector3(-1 * hordeReverse, 0, 0) * hordeSpeed * Time.deltaTime;
         transform.position = newPos;
     }
 }

@@ -3554,7 +3554,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1814756568, guid: f8fab67e2816ed3488147c7f34eca5a0, type: 3}
       propertyPath: hordeSpeed
-      value: 10
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2621536045507302356, guid: f8fab67e2816ed3488147c7f34eca5a0, type: 3}
       propertyPath: m_Name
@@ -3676,7 +3676,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 702404377, guid: 8f1c58e517e646b48bdc318c57dac0ad, type: 3}
       propertyPath: hordeSpeed
-      value: 10
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7173572706162548722, guid: 8f1c58e517e646b48bdc318c57dac0ad, type: 3}
       propertyPath: m_Name
@@ -3737,7 +3737,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1295410881, guid: b376e081372a4d449adeb36a01890ee2, type: 3}
       propertyPath: hordeSpeed
-      value: 10
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5798765290304152529, guid: b376e081372a4d449adeb36a01890ee2, type: 3}
       propertyPath: m_Name
