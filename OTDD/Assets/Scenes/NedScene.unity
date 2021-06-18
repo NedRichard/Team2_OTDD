@@ -1276,7 +1276,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentProgress: 0
-  MaxProgress: 150
+  MaxProgress: 100
 --- !u!1 &998781230
 GameObject:
   m_ObjectHideFlags: 0
